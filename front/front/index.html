@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form method="post" id="form">            
+            <div class="dados-cliente">
+            <fieldset>
+                <legend>Dados do cliente</legend>
+                <ul>
+                    <li>   
+                        <label>Nome</label>
+                        <input type="text" id="newNome"  name="nome" placeholder="Nome e sobrenome" 
+                        required autofocus >
+                    </li>
+                    <li>
+                        <label>Gostos</label>
+                        <input type="text" id="newGostos" name="gostos" placeholder="Gostos">
+                    </li> 
+                    <li>
+                        <label>Endereço</label>
+                        <input type="text" id="newEndereco" name="endereco" 
+                        placeholder="Digite o endereço">
+                    </li>
+                </ul>
+            </fieldset>
+            </div>
+            <div class="button">
+                <input type="button" value="Enviar" onclick="submitForm()">
+                
+            </div>
+        </form>
+        <hr>
+        <h4>Tabela in JS</h4>
+        <div id="table">
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="script-for-form.js"></script>
+</body>
+</html>
